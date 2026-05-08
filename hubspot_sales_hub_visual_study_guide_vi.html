@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HubSpot Sales Hub Software Certification - Visual Study Guide</title>
+  <style>
+    :root{
+      --orange:#ff5c35;
+      --dark:#213343;
+      --blue:#00a4bd;
+      --green:#00bda5;
+      --yellow:#f5c26b;
+      --light:#f6f9fc;
+      --muted:#6b7c93;
+      --card:#ffffff;
+      --line:#dbe4ed;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#fff 0%,#f6f9fc 100%);
+      color:var(--dark);
+      line-height:1.55;
+    }
+    header{
+      padding:42px 8%;
+      background:linear-gradient(135deg,var(--dark),#33475b);
+      color:white;
+    }
+    header h1{font-size:34px;margin:0 0 10px}
+    header p{font-size:18px;margin:0;color:#dbe4ed;max-width:900px}
+    .exam{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      padding:22px 8%;
+      background:white;
+      border-bottom:1px solid var(--line);
+    }
+    .stat{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      background:var(--light);
+      text-align:center;
+    }
+    .stat b{display:block;font-size:28px;color:var(--orange)}
+    .wrap{padding:34px 8% 60px}
+    .lesson{
+      margin:0 0 34px;
+      border-radius:24px;
+      background:var(--card);
+      border:1px solid var(--line);
+      box-shadow:0 12px 28px rgba(33,51,67,.08);
+      overflow:hidden;
+    }
+    .lesson-title{
+      padding:22px 26px;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .lesson-title h2{margin:0;font-size:24px}
+    .lesson-title span{
+      background:rgba(255,255,255,.18);
+      padding:6px 12px;
+      border-radius:999px;
+      font-weight:bold;
+      white-space:nowrap;
+    }
+    .l1{background:linear-gradient(135deg,var(--orange),#f28c28)}
+    .l2{background:linear-gradient(135deg,var(--blue),#007c89)}
+    .l3{background:linear-gradient(135deg,var(--green),#008f7a)}
+    .l4{background:linear-gradient(135deg,#7c3aed,#4c1d95)}
+    .content{padding:26px}
+    .summary{
+      font-size:17px;
+      margin:0 0 22px;
+      color:#33475b;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:16px;
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      background:#fff;
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:18px;
+      color:var(--dark);
+    }
+    .card p{margin:0;color:#425b76}
+    .tag{
+      display:inline-block;
+      margin:6px 6px 0 0;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#eef5ff;
+      color:#33475b;
+      font-size:13px;
+      font-weight:bold;
+    }
+    .flow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin:18px 0;
+    }
+    .step{
+      background:var(--light);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 14px;
+      font-weight:bold;
+    }
+    .arrow{font-size:22px;color:var(--muted)}
+    .note{
+      margin-top:18px;
+      padding:16px 18px;
+      border-left:5px solid var(--orange);
+      background:#fff7f4;
+      border-radius:12px;
+      color:#33475b;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:16px;
+      overflow:hidden;
+      border-radius:14px;
+      font-size:15px;
+    }
+    th,td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}
+    th{background:#f0f4f8;color:var(--dark)}
+    .checklist{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+    .check{
+      background:var(--light);
+      border-radius:14px;
+      padding:12px 14px;
+      border:1px solid var(--line);
+    }
+    .check::before{content:"✓ ";color:var(--green);font-weight:bold}
+    footer{
+      padding:26px 8%;
+      background:#213343;
+      color:#dbe4ed;
+      font-size:14px;
+    }
+    @media(max-width:900px){
+      .exam,.grid,.checklist{grid-template-columns:1fr}
+      header h1{font-size:28px}
+      .lesson-title{display:block}
+      .lesson-title span{display:inline-block;margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HubSpot Sales Hub Software Certification</h1>
+    <p>Bản visualize tiếng Việt giúp ôn tập nhanh các nội dung chính: sales workspace, lead management, prospecting, deal management, reporting và conversation intelligence.</p>
+  </header>
+
+  <section class="exam">
+    <div class="stat"><b>60</b>Câu hỏi</div>
+    <div class="stat"><b>45</b>Câu đúng để đạt</div>
+    <div class="stat"><b>3 giờ</b>Thời gian làm bài</div>
+    <div class="stat"><b>12 giờ</b>Chờ giữa các lần thi</div>
+  </section>
+
+  <main class="wrap">
+    <section class="lesson">
+      <div class="lesson-title l1">
+        <h2>Lesson 1 — Xác định Lead phù hợp</h2>
+        <span>Lead Management</span>
+      </div>
+      <div class="content">
+        <p class="summary">Mục tiêu chính là biết cách thêm, tổ chức và xem contacts/leads để tập trung vào những prospect có khả năng chuyển đổi cao hơn.</p>
+
+        <div class="flow">
+          <div class="step">Contact / Company</div><div class="arrow">→</div>
+          <div class="step">Lead</div><div class="arrow">→</div>
+          <div class="step">Qualified Lead</div><div class="arrow">→</div>
+          <div class="step">Deal Opportunity</div>
+        </div>
+
+        <div class="grid">
+          <div class="card"><h3>Sales Workspace</h3><p>Trung tâm làm việc hằng ngày để quản lý tasks, prospects, deals, lịch trình và suggested activities trong một nơi.</p></div>
+          <div class="card"><h3>Leads</h3><p>Là object đại diện cho cơ hội bán hàng tiềm năng, luôn liên kết với contact hoặc company record.</p></div>
+          <div class="card"><h3>Lifecycle Stages</h3><p>Dùng để phân loại contacts và companies theo vị trí của họ trong sales process.</p></div>
+          <div class="card"><h3>Lead Stages</h3><p>Cho biết lead đang ở đâu trong quá trình giao tiếp: attempted, connected, qualified, disqualified.</p></div>
+          <div class="card"><h3>Target Accounts</h3><p>Phù hợp với deal giá trị lớn, có buying committee và ICP rõ ràng.</p></div>
+          <div class="card"><h3>Chatflows</h3><p>Bao gồm live chat prompts, có thể dùng bot hoặc không, để qualify leads hoặc đặt lịch meeting.</p></div>
+        </div>
+
+        <div class="note"><b>Điểm dễ nhớ:</b> Contact là người/công ty; Lead là cơ hội hành động gắn với người/công ty đó. Target Accounts phù hợp khi sales cycle phức tạp và có nhiều người tham gia quyết định.</div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <div class="lesson-title l2">
+        <h2>Lesson 2 — Kết nối với khách hàng</h2>
+        <span>Outreach & Productivity</span>
+      </div>
+      <div class="content">
+        <p class="summary">Bài này tập trung vào calls, meetings, emails, tasks, sequences và AI tools để giúp sales rep tiếp cận khách hàng hiệu quả hơn.</p>
+
+        <table>
+          <tr><th>Công cụ</th><th>Chức năng chính</th><th>Điểm cần nhớ</th></tr>
+          <tr><td>Tasks</td><td>Quản lý việc cần làm: to-do, call, email.</td><td>Salespeople dành ít hơn 40% thời gian để bán hàng, nên task management rất quan trọng.</td></tr>
+          <tr><td>Task Queues</td><td>Sắp xếp tasks theo thứ tự như playlist.</td><td>Giúp xử lý công việc theo luồng rõ ràng.</td></tr>
+          <tr><td>Email Tracking</td><td>Biết khi contact mở hoặc click email.</td><td>Không cho biết vị trí chính xác của recipient.</td></tr>
+          <tr><td>Templates</td><td>Email có sẵn subject/body.</td><td>Placeholder tokens hiển thị bằng CHỮ IN HOA và cần được cập nhật.</td></tr>
+          <tr><td>Snippets</td><td>Đoạn text ngắn dùng lại nhanh.</td><td>Chèn bằng ký hiệu #.</td></tr>
+          <tr><td>Playbooks</td><td>Nội dung hỗ trợ sales call có câu hỏi, text fields, buttons.</td><td>Mạnh hơn snippets, phù hợp discovery/qualification calls.</td></tr>
+          <tr><td>Sequences</td><td>Tự động gửi email, tạo follow-up tasks, chạy A/B tests.</td><td>Dừng khi contact reply hoặc book meeting.</td></tr>
+          <tr><td>Prospecting Agent</td><td>AI nghiên cứu prospects và tạo email cá nhân hóa.</td><td>Selling profiles nên tạo theo từng product/service, không phải theo từng user.</td></tr>
+        </table>
+
+        <div class="note"><b>Điểm dễ nhớ:</b> Sequence giúp tự động hóa outreach, nhưng vẫn cần kiểm soát bằng filters như “Now in Sequence” để tránh enroll trùng contact.</div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <div class="lesson-title l3">
+        <h2>Lesson 3 — Chốt sales bằng HubSpot</h2>
+        <span>Deals & Meetings</span>
+      </div>
+      <div class="content">
+        <p class="summary">Phần này giải thích cách quản lý deals, deal board, deal stages, forecasting logic và meeting scheduling để theo dõi cơ hội doanh thu từ đầu đến cuối.</p>
+
+        <div class="flow">
+          <div class="step">Qualified to Buy</div><div class="arrow">→</div>
+          <div class="step">Presentation Scheduled</div><div class="arrow">→</div>
+          <div class="step">Decision Maker Bought-In</div><div class="arrow">→</div>
+          <div class="step">Contract Sent</div><div class="arrow">→</div>
+          <div class="step">Closed Won / Lost</div>
+        </div>
+
+        <div class="grid">
+          <div class="card"><h3>Deals</h3><p>Dùng để theo dõi sales opportunities trong pipeline và potential revenue từ đầu đến khi đóng deal.</p></div>
+          <div class="card"><h3>Deal Board</h3><p>Giao diện visual, deals nằm trong các cột theo deal stages và di chuyển từ trái sang phải.</p></div>
+          <div class="card"><h3>Required Fields</h3><p>Khi tạo deal cần deal name, deal stage và pipeline. Amount không bắt buộc.</p></div>
+          <div class="card"><h3>Deal Score</h3><p>AI dự đoán xác suất deal đang mở sẽ close.</p></div>
+          <div class="card"><h3>Deal Insights</h3><p>AI xác định risks trong open deals để ưu tiên xử lý các cơ hội quan trọng.</p></div>
+          <div class="card"><h3>Inactive Cards</h3><p>Làm mờ deal cards không được cập nhật trong một khoảng thời gian, giúp phát hiện deal bị đứng.</p></div>
+        </div>
+
+        <h3>3 loại scheduling pages</h3>
+        <div>
+          <span class="tag">One-on-One</span>
+          <span class="tag">Group Meetings</span>
+          <span class="tag">Round Robin</span>
+        </div>
+
+        <div class="note"><b>Điểm dễ nhớ:</b> Tạo Lead khi mới có cơ hội tiếp cận; tạo Deal khi đã có khả năng đóng doanh thu thật sự.</div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <div class="lesson-title l4">
+        <h2>Lesson 4 — Reporting & Upskilling</h2>
+        <span>Reports, Forecast & Coaching</span>
+      </div>
+      <div class="content">
+        <p class="summary">Bài này tập trung vào dashboard, goals, forecasting và conversation intelligence để sales team theo dõi hiệu suất và cải thiện kỹ năng bán hàng.</p>
+
+        <div class="grid">
+          <div class="card"><h3>Dashboards</h3><p>Tập hợp reports đồng bộ với dữ liệu. Có thể dùng templates như Sales Rep, Sales Team Performance, Sales Opportunity Review.</p></div>
+          <div class="card"><h3>Quick Filters</h3><p>Lọc dashboard theo date range, owners và teams.</p></div>
+          <div class="card"><h3>Analytics Suite</h3><p>Reports có sẵn theo nhóm: activities & leads, deals, forecast & revenue.</p></div>
+          <div class="card"><h3>Goals Tool</h3><p>Thiết lập mục tiêu revenue, deals created, meetings booked và các metrics khác theo tuần/tháng/quý/năm.</p></div>
+          <div class="card"><h3>Forecast Tool</h3><p>Theo dõi revenue-based goals cho team và từng rep. Chỉ visualize revenue goals.</p></div>
+          <div class="card"><h3>Weighted Deal Amount</h3><p>Ước tính doanh thu kỳ vọng dựa trên deal stages và deal amounts.</p></div>
+        </div>
+
+        <h3>Conversation Intelligence</h3>
+        <div class="checklist">
+          <div class="check">Ghi âm, phân tích và review sales calls.</div>
+          <div class="check">Insights theo dõi terms/phrases được nhắc trong call.</div>
+          <div class="check">Stats cho biết talk-to-listen ratio.</div>
+          <div class="check">Transcript có thể search và click để nhảy tới đoạn ghi âm.</div>
+          <div class="check">Share segments cho coaching hoặc recognition.</div>
+          <div class="check">Coaching playlists gom các recorded calls để training.</div>
+        </div>
+
+        <div class="note"><b>Điểm dễ nhớ:</b> Forecast Tool không dùng cho mọi loại goal; nó chỉ visualize revenue goals, không phải meetings booked hay deals created.</div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <div class="lesson-title l1">
+        <h2>Cheat Sheet — Câu hỏi dễ gặp</h2>
+        <span>Quick Review</span>
+      </div>
+      <div class="content">
+        <table>
+          <tr><th>Câu hỏi</th><th>Đáp án ngắn</th></tr>
+          <tr><td>Insert snippet bằng gì?</td><td>Dùng ký hiệu <b>#</b>.</td></tr>
+          <tr><td>Company records có timelines không?</td><td><b>Có</b>. Vì vậy câu “không có timelines” là False.</td></tr>
+          <tr><td>Transcript trong conversation intelligence dùng để làm gì?</td><td>Cung cấp full searchable transcript và có thể search keywords/phrases.</td></tr>
+          <tr><td>3 scheduling page options là gì?</td><td>One-on-one, group, round robin.</td></tr>
+          <tr><td>Sales meeting notetaker làm gì?</td><td>Transcribe calls, tạo AI summaries, gợi ý follow-up activities.</td></tr>
+          <tr><td>Dynamic sequence là gì?</td><td>Sequence cho phép edit engagement signals và tạo manual tasks khi lead engages.</td></tr>
+          <tr><td>Goal duration có thể là gì?</td><td>Weekly, monthly, quarterly, yearly.</td></tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Visual guide được tạo dựa trên tài liệu “HubSpot Sales Hub Software Certification Study Guide”. Dùng để ôn tập nhanh, không thay thế việc đọc toàn bộ tài liệu.
+  </footer>
+</body>
+</html>
